@@ -9,3 +9,4 @@
 * process 通过canvas绘制流程图
 * deep_copy 深拷贝
 * linkList 实现链表
+* stack 栈，用栈实现队列
