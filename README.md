@@ -8,3 +8,4 @@
 * performance 通过performance查看页面各项加载时间
 * process 通过canvas绘制流程图
 * deep_copy 深拷贝
+* linkList 实现链表
