@@ -30,7 +30,7 @@ function linkList(){
         return length
     }
 
-    //打印每个节点
+    //打印每个节点(顺序)
     this.print = function(){
         let cur_node = head;
         let str_link = ''
@@ -43,6 +43,17 @@ function linkList(){
         console.log("长度为"+ length);
     }
 
+    //打印每个节点(反序)
+    this.reverse_print = function(){
+        let print = function(head, str_link=''){
+            if(!head) return null
+            if(!head.next) return str_link += head.data
+            
+            str_link += print(head.next, str_link)
+            return str_link += ' ->' + head.data
+        }
+        console.log(print(head))
+    }
     //插入
     this.insert = function (index,data){
         if(index<0 || index>length) return false
@@ -158,17 +169,16 @@ function linkList(){
     }
 }
 
+module.exports = linkList
+
 
 let link = new linkList()
 link.append(1)
 link.append(2)
 link.append(3)
 link.append(4)
-
 link.insert(2,5)
 
 link.print()
-console.log(link.get(3));
-console.log(link.head());
-console.log(link.indexOf(5));
 
+link.reverse_print()
