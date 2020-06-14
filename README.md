@@ -7,6 +7,7 @@
 * recursion 递归
 * performance 通过performance查看页面各项加载时间
 * process 通过canvas绘制流程图
-栈，用栈实现队列* deep_copy 深拷贝
+* deep_copy 深拷贝
 * linkList 实现链表
-* stack 
+* stack 栈，用栈实现队列
+* tree 树（二叉树）

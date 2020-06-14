@@ -23,6 +23,9 @@ function stack(){
 	this.isEmpty = function(){
 		return arr.length === 0
 	}
+	this.arr = function(){
+		return arr
+	}
 }
 
 
