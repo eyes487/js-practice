@@ -1,10 +1,10 @@
-const stack = require('./stack')
+const Stack = require('./stack')
 
 
 
 function queue(){
-	const stack1 = new stack()
-	const stack2 = new stack()
+	const stack1 = new Stack()
+	const stack2 = new Stack()
 
 	this.enqueue = function(data){ //入队操作stack1就行  
 		stack1.push(data)

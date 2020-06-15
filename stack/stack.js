@@ -1,4 +1,4 @@
-function stack(){
+function Stack(){
 	let arr = []
 
 	this.push = function(data){
@@ -23,10 +23,7 @@ function stack(){
 	this.isEmpty = function(){
 		return arr.length === 0
 	}
-	this.arr = function(){
-		return arr
-	}
 }
 
 
-module.exports = stack
+module.exports = Stack

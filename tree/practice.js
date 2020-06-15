@@ -3,7 +3,7 @@
 * 练习题
 */
 const BinaryTree = require('./tree.js')
-const stack = require('../stack/stack')
+const Stack = require('../stack/stack')
 
 let  bt = new BinaryTree()
 bt.init_tree("A(B(C,D),E(F(G,),H(I,J)))")
@@ -11,7 +11,7 @@ bt.init_tree("A(B(C,D),E(F(G,),H(I,J)))")
 //使用非递归的方式实现树的遍历方法
 function in_order(node){
 	if(!node) return 
-	let stack_ins1 = new stack()
+	let stack_ins1 = new Stack()
 	let cur_node = node
 
 	while(true){
@@ -31,7 +31,7 @@ function in_order(node){
 
 function pre_order(node){
 	if(!node) return 
-	let stack_ins1 = new stack()
+	let stack_ins1 = new Stack()
 	let cur_node = node
 
 	while(cur_node){
@@ -53,7 +53,7 @@ var Tag = function(node, state){
 };
 
 function post_order(node){
-    var stack_ins1 = new stack();
+    var stack_ins1 = new Stack();
     var curr_node = node;
     while(true){
         while(curr_node){

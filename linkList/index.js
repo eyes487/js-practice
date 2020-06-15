@@ -2,7 +2,7 @@
  * 实现一个链表
  */
 
-function linkList(){
+function LinkList(){
     function Node(data){
         this.data = data
         this.next = null
@@ -169,10 +169,10 @@ function linkList(){
     }
 }
 
-module.exports = linkList
+module.exports = LinkList
 
 
-let link = new linkList()
+let link = new LinkList()
 link.append(1)
 link.append(2)
 link.append(3)

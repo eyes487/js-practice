@@ -2,7 +2,7 @@
 /**
 * 二叉树
 */
-const stack = require('../stack/stack')
+const Stack = require('../stack/stack')
 
 //创建节点
 function BinTreeNode(data){
@@ -18,7 +18,7 @@ function BinaryTree(){
 
 	//采用广义表表示的建立二叉树方法
 	this.init_tree = function(string){
-		let stack1 = new stack()
+		let stack1 = new Stack()
 		let k = 0; //  标识识别的是左指数还是右指数
 		let new_node = null
 
